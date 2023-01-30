@@ -35,4 +35,19 @@
   width: auto;
   height: 100%;
   background-size: contain;
+}
+.hero .wrapper-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .wrapper-text h2 {
+  padding-bottom: 40px;
+}
+.hero .wrapper-text p {
+  width: 800px;
+  display: flex;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
