@@ -2,8 +2,7 @@
   font-family: "Roboto", Arial, sans-serif;
 }
 
-body {
-    // Reset CSS
+body { // Reset CSS
   margin: 0;
   padding: 0;
 }
@@ -34,42 +33,45 @@ ul {
 header {
   background-color: white;
   width: 70%;
-  margin: 0 auto;
+  margin: auto;
   justify-content: space-between;
   display: flex;
-  padding: 10px 0 10spx 0;
   align-items: center;
   h1 {
     color: #808080;
     text-transform: uppercase;
     letter-spacing: 5px;
   }
-  ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    li {
-      color: #808080;
-      text-transform: uppercase;
-    }
-    #sign {
-      color: white;
-      background-color: #00e1ff;
-      padding: 4px 25px 4px 25px;
-      border-radius: 50px;
-    }
+  nav {
+    width: 30%;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        li {
+          color: #808080;
+          text-transform: uppercase;
+        }
+        #sign {
+          color: white;
+          background-color: #00e1ff;
+          padding: 6px 30px 6px 30px;
+          border-radius: 50px;
+          a {
+            color: white;
+          }
+        }
+      }
   }
+  
 }
 
 // ------------------- Héro
 
 .hero {
   background: url(./img/hero.jpg) no-repeat;
-  margin: auto;
-  width: auto;
-  height: 75%;
-  background-size: contain;
+  height: 75vh;
+  background-size: cover;
   .wrapper-text {
     color: white;
     display: flex;
@@ -82,7 +84,6 @@ header {
       display: flex;
       align-items: center;
       gap: 3px;
-      padding-bottom: 40px;
     }
     p {
       width: 850px;
@@ -102,7 +103,6 @@ header {
   align-items: center;
   height: 200px;
   h2 {
-    padding-bottom: 40px;
     color: #00e1ff;
   }
   p {
@@ -192,11 +192,10 @@ footer {
         }
 
     }
-    .spacer {
+    hr {
         color: white;
         width: 70%;
         margin: auto;
-        border-bottom: 1px solid;
     }
     .footer-bot {
         padding-top: 15px;
