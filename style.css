@@ -27,4 +27,12 @@
   background-color: #00E1FF;
   padding: 4px 25px 4px 25px;
   border-radius: 50px;
+}
+
+.hero {
+  background: url(/img/hero.jpg) no-repeat;
+  margin: 0 auto;
+  width: auto;
+  height: 100%;
+  background-size: contain;
 }/*# sourceMappingURL=style.css.map */
