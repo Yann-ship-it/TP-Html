@@ -4,32 +4,36 @@
   font-family: "Roboto", Arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("/font/Roboto/Roboto-Regular.ttf");
 }
-.navbar {
+header {
   background-color: white;
   display: flex;
   justify-content: space-around;
   padding: 20px 0 20px 0;
 }
-.navbar h2 {
-  color: 808080;
+header h1 {
+  color: #808080;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-.navbar ul {
+header ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 25px;
 }
-.navbar ul li {
+header ul li {
   color: #808080;
   text-transform: uppercase;
 }
-.navbar ul #sign {
+header ul #sign {
   color: white;
   background-color: #00e1ff;
   padding: 4px 25px 4px 25px;
@@ -103,6 +107,7 @@
   flex-direction: column;
   gap: 15px;
 }
-.team .staff button {
+.team button {
   background: #00e1ff;
+  border: 1px solid white;
 }/*# sourceMappingURL=style.css.map */

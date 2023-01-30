@@ -5,6 +5,10 @@
   font-family: "Roboto", Arial, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 // ------------------- Font
 
 @font-face {
@@ -14,13 +18,13 @@
 
 // ------------------- Nav
 
-.navbar {
+header {
   background-color: white;
   display: flex;
   justify-content: space-around;
   padding: 20px 0 20px 0;
-  h2 {
-    color: 808080;
+  h1 {
+    color: #808080;
     text-transform: uppercase;
     letter-spacing: 5px;
   }
@@ -76,45 +80,46 @@
 // ------------------- About
 
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    h2 {
-        padding-bottom: 40px;
-        color: #00e1ff;
-    }
-    p {
-        text-align: center;
-        width: 900px;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  h2 {
+    padding-bottom: 40px;
+    color: #00e1ff;
+  }
+  p {
+    text-align: center;
+    width: 900px;
+  }
 }
 
 // ------------------- Team
 
 .team {
-    background-color: #00e1ff;
+  background-color: #00e1ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  h2 {
+    color: white;
+  }
+  .staff {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    h2 {
-        color: white;
+    gap: 50px;
+    text-align: center;
+    color: white;
+    .member {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
-    .staff {
-        display: flex;
-        gap: 50px;
-        text-align: center;
-        color: white;
-        .member {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        button {
-            background: #00e1ff;
-        }
-    }
+  }
+  button {
+    background: #00e1ff;
+    border: 1px solid white;
+  }
 }
