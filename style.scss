@@ -2,7 +2,8 @@
   font-family: "Roboto", Arial, sans-serif;
 }
 
-body { // Reset CSS
+body {
+  // Reset CSS
   margin: 0;
   padding: 0;
 }
@@ -13,8 +14,8 @@ a {
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 // ------------------- Font
@@ -46,25 +47,25 @@ header {
   nav {
     width: 30%;
     ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        li {
-          color: #808080;
-          text-transform: uppercase;
-        }
-        #sign { // Bouton bleu
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      li {
+        color: #808080;
+        text-transform: uppercase;
+      }
+      #sign {
+        // Bouton bleu
+        color: white;
+        background-color: #00e1ff;
+        padding: 6px 30px 6px 30px;
+        border-radius: 50px;
+        a {
           color: white;
-          background-color: #00e1ff;
-          padding: 6px 30px 6px 30px;
-          border-radius: 50px;
-          a {
-            color: white;
-          }
         }
       }
+    }
   }
-  
 }
 
 // ------------------- Héro
@@ -158,66 +159,64 @@ header {
 
 // ------------------- Map
 
-
 .map {
-    background: url("./img/map.png");
-    height: 70vh;
-    width: 100%;
+  background: url("./img/map.png");
+  height: 70vh;
+  width: 100%;
 }
 
 // ------------------- Footer
 
 footer {
-    background: #333232;
-    
-    .wrapper-footer {
-        display: flex;
-        margin: auto;
-        width: 70%;
-        justify-content: space-between;
-        color: white;
-        height: 10vh;
-        .social {
-            display: flex;
-            width: 18%;
-            justify-content: space-between;
-            align-items: center;
-            .rs {
-                color: white;
-                border-radius: 100%;
-                border: 1px solid white;
-                height: 50%;
-                width: 25%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-            
-        ul {
-            display: flex;
-            width: 30%;
-            justify-content: space-between;
-            text-transform: uppercase;
-        }
+  background: #333232;
 
-    }
-    hr {
+  .wrapper-footer {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    justify-content: space-between;
+    color: white;
+    height: 10vh;
+    .social {
+      display: flex;
+      width: 18%;
+      justify-content: space-between;
+      align-items: center;
+      .rs {
         color: white;
-        width: 70%;
-        margin: auto;
-    }
-    .footer-bot {
-        padding-top: 1%;
-        color: white;
-        margin: auto;
-        width: 70%;
+        border-radius: 100%;
+        border: 1px solid white;
+        height: 50%;
+        width: 25%;
         display: flex;
-        justify-content: end;
-        ul {
-            display: flex;
-            width: 50%;
-            justify-content: space-between;
-        }
+        justify-content: center;
+        align-items: center;
+      }
     }
+
+    ul {
+      display: flex;
+      width: 30%;
+      justify-content: space-between;
+      text-transform: uppercase;
+    }
+  }
+  hr {
+    color: white;
+    width: 70%;
+    margin: auto;
+  }
+  .footer-bot {
+    padding-top: 1%;
+    color: white;
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    ul {
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+    }
+  }
 }
