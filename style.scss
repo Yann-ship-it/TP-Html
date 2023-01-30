@@ -1,0 +1,31 @@
+* { // Reset CSS
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+    h2 {
+        color: 808080;
+        text-transform: uppercase;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        li {
+            color: #808080;
+        }
+        #sign {
+            color: white;
+            background-color: #00E1FF;
+            padding: 4px 25px 4px 25px;
+            border-radius: 50px;
+        }
+    }
+
+}
