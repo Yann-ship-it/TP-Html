@@ -220,3 +220,102 @@ footer {
     }
   }
 }
+
+// Menu burger
+#burger {
+  width:30px;
+  height:2px;
+  background:white;
+  display:inline-block;
+  position:relative;
+  background-color: red;
+  &::before, &::after{
+    content:'';
+    width:30px;
+    height:2px;
+    background:white;
+    display:inline-block;
+    position:absolute;
+    transform-origin: center;
+    transition: all 0.3s ease;
+    background-color: red;
+  }
+}
+
+#burger::before {
+  top:-7px;
+}
+#burger::after {
+  top:7px;
+}
+
+#burger.open {
+  background:transparent; /* la barre du milieu disparait */
+}
+/* celles du haut et du bas s'inclinent pour former une croix */
+#burger.open::before {
+  transform: rotate(45deg); 
+  top:0;
+}
+#burger.open::after {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+ul.open {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+// Media queries for 992 pixels
+@media screen and (max-width: 992px) {
+
+  // Header
+  header{
+    nav{
+      width: 55%;
+    }
+  }
+
+  // Section équipe
+    section.team {
+      article.wrapper {
+        div.staff {
+          width: 100%;
+        }
+      }
+    }
+
+
+  // Footer
+    div.wrapper-footer {
+      ul {
+        width: 50%;
+      }
+
+      div.social {
+        width: 35%;
+      }
+    }
+    
+    div.footer-bot {
+        ul {
+          width: 100%;
+        }
+    } 
+  }
+
+
+  // Media queries for 768 pixels
+@media screen and (max-width: 768px) {
+  // Header 
+  header {
+    nav {
+      ul {
+        display: none;
+      }
+    }
+  }
+}
