@@ -31,7 +31,7 @@
 }
 .navbar ul #sign {
   color: white;
-  background-color: #00E1FF;
+  background-color: #00e1ff;
   padding: 4px 25px 4px 25px;
   border-radius: 50px;
 }
@@ -52,18 +52,31 @@
   height: 100%;
   justify-content: end;
 }
-.hero .wrapper-text h2 {
+.hero .wrapper-text .contain-star {
+  display: flex;
+  align-items: center;
+  gap: 3px;
   padding-bottom: 40px;
-}
-.hero .wrapper-text h2:before {
-  content: "ff ";
-}
-.hero .wrapper-text h2:after {
-  content: " ff";
 }
 .hero .wrapper-text p {
   width: 850px;
   display: flex;
   text-align: center;
   padding-bottom: 100px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.about h2 {
+  padding-bottom: 40px;
+  color: #00e1ff;
+}
+.about p {
+  text-align: center;
+  width: 900px;
 }/*# sourceMappingURL=style.css.map */
