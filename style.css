@@ -77,13 +77,12 @@ header nav ul #sign a {
 .hero .wrapper-text .contain-star {
   display: flex;
   align-items: center;
-  gap: 3px;
 }
 .hero .wrapper-text p {
-  width: 850px;
+  width: 53%;
   display: flex;
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 10vh;
 }
 
 .about {
@@ -91,14 +90,14 @@ header nav ul #sign a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  margin: 5vh 0 5vh 0;
 }
 .about h2 {
   color: #00e1ff;
 }
 .about p {
   text-align: center;
-  width: 900px;
+  width: 53%;
 }
 
 .team {
@@ -107,22 +106,24 @@ header nav ul #sign a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 700px;
+  padding: 5vh 0 5vh 0;
 }
 .team .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
+  width: 50%;
 }
 .team .wrapper h2 {
   color: white;
 }
 .team .wrapper .staff {
   display: flex;
-  gap: 50px;
-  text-align: center;
+  justify-content: space-between;
   color: white;
+  text-align: center;
+  width: 60%;
+  padding: 15vh 0 15vh 0;
 }
 .team .wrapper .staff .member {
   display: flex;
@@ -131,9 +132,10 @@ header nav ul #sign a {
 .team .wrapper .staff .member p {
   font-style: italic;
   font-family: "RobotoLight", Arial, sans-serif;
+  margin: 0;
 }
 .team .wrapper button {
-  padding: 10px 20px 10px 20px;
+  height: 40px;
   width: 150px;
   border-radius: 50px;
   color: white;
@@ -143,7 +145,7 @@ header nav ul #sign a {
 
 .map {
   background: url("./img/map.png");
-  height: 600px;
+  height: 70vh;
   width: 100%;
 }
 
@@ -156,16 +158,17 @@ footer .wrapper-footer {
   width: 70%;
   justify-content: space-between;
   color: white;
-  height: 85px;
+  height: 10vh;
 }
 footer .wrapper-footer .social {
   display: flex;
-  gap: 20px;
+  width: 18%;
+  justify-content: space-between;
   align-items: center;
 }
 footer .wrapper-footer .social .rs {
   color: white;
-  border-radius: 50px;
+  border-radius: 100%;
   border: 1px solid white;
   height: 45px;
   width: 45px;
@@ -175,7 +178,8 @@ footer .wrapper-footer .social .rs {
 }
 footer .wrapper-footer ul {
   display: flex;
-  gap: 70px;
+  width: 30%;
+  justify-content: space-between;
   text-transform: uppercase;
 }
 footer hr {
@@ -184,7 +188,7 @@ footer hr {
   margin: auto;
 }
 footer .footer-bot {
-  padding-top: 15px;
+  padding-top: 1%;
   color: white;
   margin: auto;
   width: 70%;
@@ -193,5 +197,6 @@ footer .footer-bot {
 }
 footer .footer-bot ul {
   display: flex;
-  gap: 70px;
+  width: 50%;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
