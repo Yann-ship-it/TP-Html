@@ -10,19 +10,22 @@ body {
 
 a {
   text-decoration: none;
-  
+}
+
+ul {
+    list-style: none;
 }
 
 // ------------------- Font
 
 @font-face {
   font-family: "Roboto";
-  src: url("/font/Roboto/Roboto-Regular.ttf");
+  src: url("./font/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "RobotoLight";
-  src: url("/font/Roboto/Roboto-Light.ttf");
+  src: url("./font/Roboto/Roboto-Light.ttf");
 }
 
 // ------------------- Nav
@@ -59,7 +62,7 @@ header {
 // ------------------- Héro
 
 .hero {
-  background: url(/img/hero.jpg) no-repeat;
+  background: url(./img/hero.jpg) no-repeat;
   margin: 0 auto;
   width: auto;
   height: 75%;
@@ -113,10 +116,12 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 700px;
   .wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 100px;
     h2 {
       color: white;
     }
@@ -128,7 +133,6 @@ header {
       .member {
         display: flex;
         flex-direction: column;
-        gap: 15px;
         p {
           font-style: italic;
           font-family: "RobotoLight", Arial, sans-serif;
@@ -144,4 +148,40 @@ header {
       border: 1px solid white;
     }
   }
+}
+
+.map {
+    background: url("./img/map.png");
+    height: 600px;
+    width: 100%;
+}
+
+footer {
+    background: #333232;
+    .wrapper-footer {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        .social {
+            display: flex;
+            gap: 20px;
+            .rs {
+                color: white;
+                border-radius: 50px;
+                border: 1px solid white;
+                height: 45px;
+                width: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+            
+        ul {
+            display: flex;
+            gap: 70px;
+            text-transform: uppercase;
+        }
+
+    }
 }

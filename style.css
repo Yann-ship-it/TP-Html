@@ -11,13 +11,17 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 @font-face {
   font-family: "Roboto";
-  src: url("/font/Roboto/Roboto-Regular.ttf");
+  src: url("./font/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "RobotoLight";
-  src: url("/font/Roboto/Roboto-Light.ttf");
+  src: url("./font/Roboto/Roboto-Light.ttf");
 }
 header {
   background-color: white;
@@ -49,7 +53,7 @@ header ul #sign {
 }
 
 .hero {
-  background: url(/img/hero.jpg) no-repeat;
+  background: url(./img/hero.jpg) no-repeat;
   margin: 0 auto;
   width: auto;
   height: 75%;
@@ -99,11 +103,13 @@ header ul #sign {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 700px;
 }
 .team .wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 100px;
 }
 .team .wrapper h2 {
   color: white;
@@ -117,7 +123,6 @@ header ul #sign {
 .team .wrapper .staff .member {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 .team .wrapper .staff .member p {
   font-style: italic;
@@ -130,4 +135,38 @@ header ul #sign {
   color: white;
   background: #00e1ff;
   border: 1px solid white;
+}
+
+.map {
+  background: url("./img/map.png");
+  height: 600px;
+  width: 100%;
+}
+
+footer {
+  background: #333232;
+}
+footer .wrapper-footer {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+footer .wrapper-footer .social {
+  display: flex;
+  gap: 20px;
+}
+footer .wrapper-footer .social .rs {
+  color: white;
+  border-radius: 50px;
+  border: 1px solid white;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .wrapper-footer ul {
+  display: flex;
+  gap: 70px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
