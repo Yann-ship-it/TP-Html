@@ -92,3 +92,29 @@
 }
 
 // ------------------- Team
+
+.team {
+    background-color: #00e1ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    h2 {
+        color: white;
+    }
+    .staff {
+        display: flex;
+        gap: 50px;
+        text-align: center;
+        color: white;
+        .member {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        button {
+            background: #00e1ff;
+        }
+    }
+}
