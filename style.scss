@@ -32,8 +32,10 @@ ul {
 
 header {
   background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
   display: flex;
-  justify-content: space-around;
   padding: 10px 0 10spx 0;
   align-items: center;
   h1 {
@@ -63,7 +65,7 @@ header {
 
 .hero {
   background: url(./img/hero.jpg) no-repeat;
-  margin: 0 auto;
+  margin: auto;
   width: auto;
   height: 75%;
   background-size: contain;
@@ -158,9 +160,12 @@ header {
 
 footer {
     background: #333232;
+    
     .wrapper-footer {
         display: flex;
-        justify-content: space-around;
+        margin: auto;
+        width: 70%;
+        justify-content: space-between;
         color: white;
         .social {
             display: flex;
@@ -184,5 +189,22 @@ footer {
             text-transform: uppercase;
         }
 
+    }
+    .spacer {
+        color: white;
+        width: 70%;
+        margin: auto;
+        border-bottom: 1px solid;
+    }
+    .footer-bot {
+        color: white;
+        margin: auto;
+        width: 70%;
+        display: flex;
+        justify-content: end;
+        ul {
+            display: flex;
+            gap: 70px;
+        }
     }
 }
