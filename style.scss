@@ -228,25 +228,27 @@ footer {
   background:white;
   display:inline-block;
   position:relative;
-  background-color: red;
+  background-color: #808080;
+  transition: 0.5s;
   &::before, &::after{
     content:'';
     width:30px;
     height:2px;
-    background:white;
     display:inline-block;
     position:absolute;
     transform-origin: center;
     transition: all 0.3s ease;
-    background-color: red;
+    background-color: #808080;
   }
 }
 
 #burger::before {
   top:-7px;
+  transition: 0.5s;
 }
 #burger::after {
   top:7px;
+  transition: 0.5s;
 }
 
 #burger.open {
@@ -256,10 +258,12 @@ footer {
 #burger.open::before {
   transform: rotate(45deg); 
   top:0;
+  transition: 0.5s;
 }
 #burger.open::after {
   transform: rotate(-45deg);
   top:0;
+  transition: 0.5s;
 }
 
 ul.open {
@@ -313,8 +317,10 @@ ul.open {
   // Header 
   header {
     nav {
+      width: 0;
       ul {
         display: none;
+        white-space: nowrap;
       }
     }
   }
