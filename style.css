@@ -170,8 +170,8 @@ footer .wrapper-footer .social .rs {
   color: white;
   border-radius: 100%;
   border: 1px solid white;
-  height: 45px;
-  width: 45px;
+  height: 50%;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
