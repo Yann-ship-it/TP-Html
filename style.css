@@ -271,11 +271,24 @@ ul.open {
   }
 }
 @media screen and (max-width: 768px) {
+  header a {
+    width: 35%;
+  }
   header nav {
     width: 0;
   }
   header nav ul {
     display: none;
     white-space: nowrap;
+  }
+  section.team article.wrapper {
+    width: 100%;
+  }
+  section.team article.wrapper div.staff {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section.team article.wrapper div.staff div.member {
+    padding: 0 5% 5% 5%;
   }
 }/*# sourceMappingURL=style.css.map */
