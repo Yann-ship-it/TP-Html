@@ -1,12 +1,16 @@
 * {
-  // Reset CSS
-  margin: 0;
-  padding: 0;
   font-family: "Roboto", Arial, sans-serif;
 }
 
+body {
+    // Reset CSS
+  margin: 0;
+  padding: 0;
+}
+
 a {
-    text-decoration: none;
+  text-decoration: none;
+  
 }
 
 // ------------------- Font
@@ -16,13 +20,19 @@ a {
   src: url("/font/Roboto/Roboto-Regular.ttf");
 }
 
+@font-face {
+  font-family: "RobotoLight";
+  src: url("/font/Roboto/Roboto-Light.ttf");
+}
+
 // ------------------- Nav
 
 header {
   background-color: white;
   display: flex;
   justify-content: space-around;
-  padding: 20px 0 20px 0;
+  padding: 10px 0 10spx 0;
+  align-items: center;
   h1 {
     color: #808080;
     text-transform: uppercase;
@@ -104,22 +114,34 @@ header {
   justify-content: center;
   align-items: center;
   height: 600px;
-  h2 {
-    color: white;
-  }
-  .staff {
+  .wrapper {
     display: flex;
-    gap: 50px;
-    text-align: center;
-    color: white;
-    .member {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+    flex-direction: column;
+    h2 {
+      color: white;
     }
-  }
-  button {
-    background: #00e1ff;
-    border: 1px solid white;
+    .staff {
+      display: flex;
+      gap: 50px;
+      text-align: center;
+      color: white;
+      .member {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        p {
+          font-style: italic;
+          font-family: "RobotoLight", Arial, sans-serif;
+        }
+      }
+    }
+    button {
+      padding: 10px 20px 10px 20px;
+      width: 150px;
+      border-radius: 50px;
+      color: white;
+      background: #00e1ff;
+      border: 1px solid white;
+    }
   }
 }

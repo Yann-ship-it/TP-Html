@@ -1,7 +1,10 @@
 * {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
 }
 
 a {
@@ -12,11 +15,16 @@ a {
   font-family: "Roboto";
   src: url("/font/Roboto/Roboto-Regular.ttf");
 }
+@font-face {
+  font-family: "RobotoLight";
+  src: url("/font/Roboto/Roboto-Light.ttf");
+}
 header {
   background-color: white;
   display: flex;
   justify-content: space-around;
-  padding: 20px 0 20px 0;
+  padding: 10px 0 10spx 0;
+  align-items: center;
 }
 header h1 {
   color: #808080;
@@ -93,21 +101,33 @@ header ul #sign {
   align-items: center;
   height: 600px;
 }
-.team h2 {
+.team .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.team .wrapper h2 {
   color: white;
 }
-.team .staff {
+.team .wrapper .staff {
   display: flex;
   gap: 50px;
   text-align: center;
   color: white;
 }
-.team .staff .member {
+.team .wrapper .staff .member {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.team button {
+.team .wrapper .staff .member p {
+  font-style: italic;
+  font-family: "RobotoLight", Arial, sans-serif;
+}
+.team .wrapper button {
+  padding: 10px 20px 10px 20px;
+  width: 150px;
+  border-radius: 50px;
+  color: white;
   background: #00e1ff;
   border: 1px solid white;
 }/*# sourceMappingURL=style.css.map */
