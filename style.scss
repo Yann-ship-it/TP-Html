@@ -161,18 +161,22 @@ div#menu {
   footer {
     div.wrapper-footer {
       padding-bottom: 2vh;
+      width: 90%;
       ul {
         display: flex;
         flex-direction: column;
-       
       }
       div.social {
         width: 60%;
       }
     }
+    hr {
+      width: 90%;
+    }
     
     div.footer-bot {
       height: 10%;
+      width: 90%;
       ul {
         flex-wrap: wrap;
         margin: 0;

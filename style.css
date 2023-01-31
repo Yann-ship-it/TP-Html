@@ -336,6 +336,7 @@ div#menu {
 @media screen and (max-width: 600px) {
   footer div.wrapper-footer {
     padding-bottom: 2vh;
+    width: 90%;
   }
   footer div.wrapper-footer ul {
     display: flex;
@@ -344,8 +345,12 @@ div#menu {
   footer div.wrapper-footer div.social {
     width: 60%;
   }
+  footer hr {
+    width: 90%;
+  }
   footer div.footer-bot {
     height: 10%;
+    width: 90%;
   }
   footer div.footer-bot ul {
     flex-wrap: wrap;
