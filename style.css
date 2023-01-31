@@ -277,6 +277,14 @@ div#menu {
 @media screen and (max-width: 768px) {
   div#menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div#menu.open {
+    margin-top: 3vh;
+  }
+  header {
+    width: 90%;
   }
   header nav {
     width: 30%;
@@ -284,6 +292,7 @@ div#menu {
   header nav ul {
     display: none;
     white-space: nowrap;
+    height: 17vh;
   }
   section.team article.wrapper {
     width: 100%;

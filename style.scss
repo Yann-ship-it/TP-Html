@@ -95,14 +95,21 @@ div#menu {
   // Menu burger
   div#menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div#menu.open {
+    margin-top: 3vh;
   }
   // Header 
   header {
+    width: 90%;
     nav {
       width: 30%;
       ul {
         display: none;
         white-space: nowrap;
+        height: 17vh;
       }
     }
   }
@@ -145,4 +152,5 @@ div#menu {
     }
   }
 }
+
 
