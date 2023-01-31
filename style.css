@@ -224,7 +224,13 @@ footer .footer-bot ul {
   justify-content: space-between;
 }
 
-* {
+p,
+a,
+button,
+li,
+h1,
+h2,
+h3 {
   font-family: "Roboto", Arial, sans-serif;
 }
 
@@ -292,5 +298,24 @@ div#menu {
   }
   section.team article.wrapper div.staff div.member {
     padding: 0 5% 5% 5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer div.wrapper-footer {
+    padding-bottom: 2vh;
+  }
+  footer div.wrapper-footer ul {
+    display: flex;
+    flex-direction: column;
+  }
+  footer div.wrapper-footer div.social {
+    width: 60%;
+  }
+  footer div.footer-bot {
+    height: 10%;
+  }
+  footer div.footer-bot ul {
+    flex-wrap: wrap;
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 @import './scss/_burger.scss';
+
 @import './scss/_nav.scss';
 @import './scss/_hero.scss';
 @import './scss/_about.scss';
@@ -6,53 +7,50 @@
 @import './scss/_map.scss';
 @import './scss/_footer.scss';
 
-
-* {
+// Ajoute la font à tous textes
+p,
+a,
+button,
+li,
+h1,
+h2,
+h3 {
   font-family: "Roboto", Arial, sans-serif;
 }
-
+// Retire les écarts du body généré par HTML
 body {
   // Reset CSS
   margin: 0;
   padding: 0;
 }
-
+// Retire le style de base des balises A
 a {
   text-decoration: none;
   color: white;
 }
-
+// Retire le style de base des balises UL
 ul {
   list-style: none;
   padding: 0;
 }
-
+// Retire le menu burger quand il n'est pas utile
 div#menu {
   display: none;
 }
 
 // ------------------- Font
-
+// Roboto normal
 @font-face {
   font-family: "Roboto";
   src: url("./font/Roboto/Roboto-Regular.ttf");
 }
-
+// Roboto fin
 @font-face {
   font-family: "RobotoLight";
   src: url("./font/Roboto/Roboto-Light.ttf");
 }
 
-
-
-
-
-
-
-
-
-
-
+// ------------------- Media Queries
 
 // Media queries for 992 pixels
 @media screen and (max-width: 992px) {
@@ -79,19 +77,18 @@ div#menu {
       ul {
         width: 50%;
       }
-
+      // Social media
       div.social {
         width: 35%;
       }
     }
-    
+    // dernier lien
     div.footer-bot {
         ul {
           width: 100%;
         }
     } 
   }
-
 
   // Media queries for 768 pixels
 @media screen and (max-width: 768px) {
@@ -109,6 +106,7 @@ div#menu {
       }
     }
   }
+  // Section team
   section.team {
     article.wrapper{
       width: 100%;
@@ -119,6 +117,31 @@ div#menu {
           padding: 0 5% 5% 5%;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    div.wrapper-footer {
+      padding-bottom: 2vh;
+      ul {
+        display: flex;
+        flex-direction: column;
+       
+      }
+      div.social {
+        width: 60%;
+      }
+    }
+    
+    div.footer-bot {
+      height: 10%;
+      ul {
+        flex-wrap: wrap;
+        margin: 0;
+      }
+      
     }
   }
 }
