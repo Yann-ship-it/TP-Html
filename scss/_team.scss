@@ -1,7 +1,9 @@
+@import 'var.scss';
+
 // ------------------- Team
 
 .team {
-    background-color: #00e1ff;
+    background-color: $blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +39,7 @@
         width: 150px;
         border-radius: 50px;
         color: white;
-        background: #00e1ff;
+        background: $blue;
         border: 1px solid white;
       }
     }

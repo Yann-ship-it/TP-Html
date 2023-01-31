@@ -1,3 +1,4 @@
+@import'./scss/_var.scss';
 @import './scss/_burger.scss';
 
 @import './scss/_nav.scss';
@@ -11,7 +12,6 @@
 p,
 a,
 button,
-li,
 h1,
 h2,
 h3 {
@@ -145,3 +145,4 @@ div#menu {
     }
   }
 }
+

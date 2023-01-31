@@ -1,3 +1,5 @@
+@import 'var.scss';
+
 // Menu burger
 #burger {
     width:30px;
@@ -5,7 +7,7 @@
     background:white;
     display:inline-block;
     position:relative;
-    background-color: #808080;
+    background-color: $gray;
     transition: 0.5s;
     &::before {
       top:-7px;
@@ -23,7 +25,7 @@
       position:absolute;
       transform-origin: center;
       transition: all 0.3s ease;
-      background-color: #808080;
+      background-color: $gray;
     }
   }
   

@@ -1,3 +1,5 @@
+@import 'var.scss';
+
 // ------------------- About
 
 .about {
@@ -7,7 +9,7 @@
     align-items: center;
     margin: 5vh 0 5vh 0;
     h2 {
-      color: #00e1ff;
+      color: $blue;
     }
     p {
       text-align: center;

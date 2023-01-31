@@ -69,7 +69,7 @@ header nav ul {
   align-items: center;
   justify-content: space-around;
 }
-header nav ul li {
+header nav ul a {
   color: #808080;
   text-transform: uppercase;
 }
@@ -78,9 +78,6 @@ header nav ul #sign {
   background-color: #00e1ff;
   padding: 6px 30px 6px 30px;
   border-radius: 50px;
-}
-header nav ul #sign a {
-  color: white;
 }
 
 .hero {
@@ -227,7 +224,6 @@ footer .footer-bot ul {
 p,
 a,
 button,
-li,
 h1,
 h2,
 h3 {
