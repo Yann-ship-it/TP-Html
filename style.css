@@ -1,30 +1,53 @@
-* {
-  font-family: "Roboto", Arial, sans-serif;
+#burger {
+  width: 30px;
+  height: 2px;
+  background: white;
+  display: inline-block;
+  position: relative;
+  background-color: #808080;
+  transition: 0.5s;
+}
+#burger::before {
+  top: -7px;
+  transition: 0.5s;
+}
+#burger::after {
+  top: 7px;
+  transition: 0.5s;
+}
+#burger::before, #burger::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  transform-origin: center;
+  transition: all 0.3s ease;
+  background-color: #808080;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+#burger.open {
+  background: transparent; /* la barre du milieu disparait */
 }
 
-a {
-  text-decoration: none;
-  color: white;
+/* celles du haut et du bas s'inclinent pour former une croix */
+#burger.open::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: 0.5s;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+#burger.open::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: 0.5s;
 }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("./font/Roboto/Roboto-Regular.ttf");
+ul.open {
+  display: flex;
+  flex-direction: column;
 }
-@font-face {
-  font-family: "RobotoLight";
-  src: url("./font/Roboto/Roboto-Light.ttf");
-}
+
 header {
   background-color: white;
   width: 70%;
@@ -201,58 +224,37 @@ footer .footer-bot ul {
   justify-content: space-between;
 }
 
-#burger {
-  width: 30px;
-  height: 2px;
-  background: white;
-  display: inline-block;
-  position: relative;
-  background-color: #808080;
-  transition: 0.5s;
-}
-#burger::before, #burger::after {
-  content: "";
-  width: 30px;
-  height: 2px;
-  display: inline-block;
-  position: absolute;
-  transform-origin: center;
-  transition: all 0.3s ease;
-  background-color: #808080;
+* {
+  font-family: "Roboto", Arial, sans-serif;
 }
 
-#burger::before {
-  top: -7px;
-  transition: 0.5s;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-#burger::after {
-  top: 7px;
-  transition: 0.5s;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-#burger.open {
-  background: transparent; /* la barre du milieu disparait */
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* celles du haut et du bas s'inclinent pour former une croix */
-#burger.open::before {
-  transform: rotate(45deg);
-  top: 0;
-  transition: 0.5s;
+div#menu {
+  display: none;
 }
 
-#burger.open::after {
-  transform: rotate(-45deg);
-  top: 0;
-  transition: 0.5s;
+@font-face {
+  font-family: "Roboto";
+  src: url("./font/Roboto/Roboto-Regular.ttf");
 }
-
-ul.open {
-  display: flex;
-  flex-direction: column;
+@font-face {
+  font-family: "RobotoLight";
+  src: url("./font/Roboto/Roboto-Light.ttf");
 }
-
 @media screen and (max-width: 992px) {
   header nav {
     width: 55%;
@@ -271,11 +273,11 @@ ul.open {
   }
 }
 @media screen and (max-width: 768px) {
-  header a {
-    width: 35%;
+  div#menu {
+    display: flex;
   }
   header nav {
-    width: 0;
+    width: 30%;
   }
   header nav ul {
     display: none;

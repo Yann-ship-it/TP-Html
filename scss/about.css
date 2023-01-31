@@ -1,0 +1,14 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh 0 5vh 0;
+}
+.about h2 {
+  color: #00e1ff;
+}
+.about p {
+  text-align: center;
+  width: 53%;
+}/*# sourceMappingURL=about.css.map */

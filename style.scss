@@ -1,3 +1,12 @@
+@import './scss/burger.scss';
+@import './scss/nav.scss';
+@import './scss/hero.scss';
+@import './scss/about.scss';
+@import './scss/team.scss';
+@import './scss/map.scss';
+@import './scss/footer.scss';
+
+
 * {
   font-family: "Roboto", Arial, sans-serif;
 }
@@ -18,6 +27,10 @@ ul {
   padding: 0;
 }
 
+div#menu {
+  display: none;
+}
+
 // ------------------- Font
 
 @font-face {
@@ -30,246 +43,14 @@ ul {
   src: url("./font/Roboto/Roboto-Light.ttf");
 }
 
-// ------------------- Nav
 
-header {
-  background-color: white;
-  width: 70%;
-  margin: auto;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  h1 {
-    color: #808080;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-  }
-  nav {
-    width: 30%;
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      li {
-        color: #808080;
-        text-transform: uppercase;
-      }
-      #sign {
-        // Bouton bleu
-        color: white;
-        background-color: #00e1ff;
-        padding: 6px 30px 6px 30px;
-        border-radius: 50px;
-        a {
-          color: white;
-        }
-      }
-    }
-  }
-}
 
-// ------------------- Héro
 
-.hero {
-  background: url(./img/hero.jpg) no-repeat;
-  height: 75vh;
-  background-size: cover;
-  .wrapper-text {
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    justify-content: end;
-    .contain-star {
-      display: flex;
-      align-items: center;
-    }
-    p {
-      width: 53%;
-      display: flex;
-      text-align: center;
-      padding-bottom: 10vh;
-    }
-  }
-}
 
-// ------------------- About
 
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5vh 0 5vh 0;
-  h2 {
-    color: #00e1ff;
-  }
-  p {
-    text-align: center;
-    width: 53%;
-  }
-}
 
-// ------------------- Team
 
-.team {
-  background-color: #00e1ff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5vh 0 5vh 0;
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    h2 {
-      color: white;
-    }
-    .staff {
-      display: flex;
-      justify-content: space-between;
-      color: white;
-      text-align: center;
-      width: 60%;
-      padding: 15vh 0 15vh 0;
-      .member {
-        display: flex;
-        flex-direction: column;
-        p {
-          font-style: italic;
-          font-family: "RobotoLight", Arial, sans-serif;
-          margin: 0;
-        }
-      }
-    }
-    button {
-      height: 40px;
-      width: 150px;
-      border-radius: 50px;
-      color: white;
-      background: #00e1ff;
-      border: 1px solid white;
-    }
-  }
-}
 
-// ------------------- Map
-
-.map {
-  background: url("./img/map.png");
-  height: 70vh;
-  width: 100%;
-}
-
-// ------------------- Footer
-
-footer {
-  background: #333232;
-
-  .wrapper-footer {
-    display: flex;
-    margin: auto;
-    width: 70%;
-    justify-content: space-between;
-    color: white;
-    height: 10vh;
-    .social {
-      display: flex;
-      width: 18%;
-      justify-content: space-between;
-      align-items: center;
-      .rs {
-        color: white;
-        border-radius: 100%;
-        border: 1px solid white;
-        height: 45px;
-        width: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-
-    ul {
-      display: flex;
-      width: 30%;
-      justify-content: space-between;
-      text-transform: uppercase;
-    }
-  }
-  hr {
-    color: white;
-    width: 70%;
-    margin: auto;
-  }
-  .footer-bot {
-    padding-top: 1%;
-    color: white;
-    margin: auto;
-    width: 70%;
-    display: flex;
-    justify-content: end;
-    ul {
-      display: flex;
-      width: 50%;
-      justify-content: space-between;
-    }
-  }
-}
-
-// Menu burger
-#burger {
-  width:30px;
-  height:2px;
-  background:white;
-  display:inline-block;
-  position:relative;
-  background-color: #808080;
-  transition: 0.5s;
-  &::before, &::after{
-    content:'';
-    width:30px;
-    height:2px;
-    display:inline-block;
-    position:absolute;
-    transform-origin: center;
-    transition: all 0.3s ease;
-    background-color: #808080;
-  }
-}
-
-#burger::before {
-  top:-7px;
-  transition: 0.5s;
-}
-#burger::after {
-  top:7px;
-  transition: 0.5s;
-}
-
-#burger.open {
-  background:transparent; /* la barre du milieu disparait */
-}
-/* celles du haut et du bas s'inclinent pour former une croix */
-#burger.open::before {
-  transform: rotate(45deg); 
-  top:0;
-  transition: 0.5s;
-}
-#burger.open::after {
-  transform: rotate(-45deg);
-  top:0;
-  transition: 0.5s;
-}
-
-ul.open {
-  display: flex;
-  flex-direction: column;
-}
 
 
 
@@ -314,13 +95,14 @@ ul.open {
 
   // Media queries for 768 pixels
 @media screen and (max-width: 768px) {
+  // Menu burger
+  div#menu {
+    display: flex;
+  }
   // Header 
   header {
-    a {
-      width: 35%;
-    }
     nav {
-      width: 0;
+      width: 30%;
       ul {
         display: none;
         white-space: nowrap;

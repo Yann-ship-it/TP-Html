@@ -1,0 +1,16 @@
+// ------------------- About
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0 5vh 0;
+    h2 {
+      color: #00e1ff;
+    }
+    p {
+      text-align: center;
+      width: 53%;
+    }
+  }

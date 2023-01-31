@@ -1,0 +1,55 @@
+// ------------------- Footer
+
+footer {
+    background: #333232;
+  
+    .wrapper-footer {
+      display: flex;
+      margin: auto;
+      width: 70%;
+      justify-content: space-between;
+      color: white;
+      height: 10vh;
+      .social {
+        display: flex;
+        width: 18%;
+        justify-content: space-between;
+        align-items: center;
+        .rs {
+          color: white;
+          border-radius: 100%;
+          border: 1px solid white;
+          height: 45px;
+          width: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+  
+      ul {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        text-transform: uppercase;
+      }
+    }
+    hr {
+      color: white;
+      width: 70%;
+      margin: auto;
+    }
+    .footer-bot {
+      padding-top: 1%;
+      color: white;
+      margin: auto;
+      width: 70%;
+      display: flex;
+      justify-content: end;
+      ul {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+      }
+    }
+  }

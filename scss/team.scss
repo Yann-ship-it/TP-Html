@@ -1,0 +1,44 @@
+// ------------------- Team
+
+.team {
+    background-color: #00e1ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0 5vh 0;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      h2 {
+        color: white;
+      }
+      .staff {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        text-align: center;
+        width: 60%;
+        padding: 15vh 0 15vh 0;
+        .member {
+          display: flex;
+          flex-direction: column;
+          p {
+            font-style: italic;
+            font-family: "RobotoLight", Arial, sans-serif;
+            margin: 0;
+          }
+        }
+      }
+      button {
+        height: 40px;
+        width: 150px;
+        border-radius: 50px;
+        color: white;
+        background: #00e1ff;
+        border: 1px solid white;
+      }
+    }
+  }

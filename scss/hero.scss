@@ -1,0 +1,26 @@
+// ------------------- Héro
+
+.hero {
+    background: url(./img/hero.jpg) no-repeat;
+    height: 75vh;
+    background-size: cover;
+    .wrapper-text {
+      color: white;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      justify-content: end;
+      .contain-star {
+        display: flex;
+        align-items: center;
+      }
+      p {
+        width: 53%;
+        display: flex;
+        text-align: center;
+        padding-bottom: 10vh;
+      }
+    }
+  }

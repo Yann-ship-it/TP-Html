@@ -1,0 +1,48 @@
+// Menu burger
+#burger {
+    width:30px;
+    height:2px;
+    background:white;
+    display:inline-block;
+    position:relative;
+    background-color: #808080;
+    transition: 0.5s;
+    &::before {
+      top:-7px;
+      transition: 0.5s;
+    }
+    &::after {
+      top:7px;
+      transition: 0.5s;
+    }
+    &::before, &::after{ 
+      content:'';
+      width:30px;
+      height:2px;
+      display:inline-block;
+      position:absolute;
+      transform-origin: center;
+      transition: all 0.3s ease;
+      background-color: #808080;
+    }
+  }
+  
+  #burger.open {
+    background:transparent; /* la barre du milieu disparait */
+  }
+  /* celles du haut et du bas s'inclinent pour former une croix */
+  #burger.open::before {
+    transform: rotate(45deg); 
+    top:0;
+    transition: 0.5s;
+  }
+  #burger.open::after {
+    transform: rotate(-45deg);
+    top:0;
+    transition: 0.5s;
+  }
+  
+  ul.open {
+    display: flex;
+    flex-direction: column;
+  }
